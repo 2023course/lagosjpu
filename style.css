@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  }
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 0 1rem;
+}
+
+:root{
+  --shadow: 0 .5rem 1rem rgb(0,0,0,.05);
+  --blue: #0D99FF;
+  --blue-light: #CFEBFF;
+  --blue-dark: #0A7ACC;
+
+  --rounded: .25rem;
+  --rounded-md: .5rem;
+}
+
+.contact{
+  max-width: 640px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  border-radius: var(--rounded);
+}
+
+.contact-title{
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+
+.contact-dscription{
+  margin-bottom: 2rem;
+}
+
+.form-group{
+  margin-bottom: 1.5rem;
+}
+
+input,
+textarea{
+  width: 100%;
+  padding: .75rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  border-radius: var(--rounded);
+  border: 1px solid #bbb;
+}
+
+input:focus,
+textarea:focus{
+  border-color: var(--blue);
+  box-shadow: 0 0 0 .25rem --blue-light;
+}
+
+label{
+  margin-bottom: .25rem;
+  display: inline-block;
+}
+
+.btn-submit{
+  padding: .5rem 1rem;
+  cursor: pointer;
+  border-radius: var(--rounded);
+  background-color: var(--blue);
+  color:#fff;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.btn-submit:hover{
+  background-color: var(--blue-dark);
+}
+
+.btn-submit:focus,
+.btn-submit:active{
+  box-shadow: 0 0 0 .25rem --blue-light;
+}
+
